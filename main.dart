@@ -3,19 +3,37 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(backgroundColor: Colors.cyanAccent ,
+      home: Scaffold(
         appBar: AppBar(
-          title: Text('welcome',
-          style: TextStyle(color: const Color.fromARGB(255, 22, 3, 85)), ),
-          backgroundColor: Colors.amberAccent,
-          
+          title: Text(
+            'INSTAGRAM',
+            style: TextStyle(color: Colors.red, fontSize: 25),
+          ),
+          backgroundColor: Colors.yellow,
         ),
 
-        body: 
-        Center(
-          child: Text('this is app'),
-        ),
+        backgroundColor: Colors.cyanAccent,
+
+
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [const Color.fromARGB(255, 39, 2, 45), const Color.fromARGB(255, 115, 8, 134)],
+              begin: Alignment.topLeft ,
+              end: Alignment.bottomRight,
+            ),),
+
+            
+            child: Center(
+              child: Text(
+                'this is apk',
+                style: TextStyle(fontSize: 30 ,
+                color: Colors.white),
+              ),
+            ),
+          ),
       ),
-    ),
+      ),
+    
   );
 }
