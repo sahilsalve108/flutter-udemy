@@ -10,7 +10,7 @@ void main() {
             'welcome',
           )),
         ),
-        body: GradientContainer() ,
+        body: const GradientContainer() ,
       ),
     ),
   );
