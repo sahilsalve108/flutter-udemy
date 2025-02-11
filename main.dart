@@ -10,7 +10,7 @@ void main() {
             'welcome',
           )),
         ),
-        body: const GradientContainer() ,
+        body: const GradientContainer(Color.fromARGB(255, 115, 8, 43) ,Color.fromARGB(255, 141, 76, 98)) ,
       ),
     ),
   );
